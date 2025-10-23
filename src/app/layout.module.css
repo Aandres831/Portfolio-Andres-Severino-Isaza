@@ -1,0 +1,21 @@
+/* File: src/app/layout.module.css */
+/* Estilos principales para el cuerpo de la página, aplicando fondo oscuro, degradados sutiles y tipografía. */
+body {
+  min-height: 100vh;
+  background: 
+    radial-gradient(
+      circle at 30% 20%, 
+      hsl(150, 68%, 66%, 0.05), 
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 70% 80%, 
+      hsl(160, 84%, 39%, 0.04), 
+      transparent 60%
+    ),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.3px;
+}
+
