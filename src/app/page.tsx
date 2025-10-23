@@ -7,8 +7,8 @@ export default function Home() {
     <section>
       <div className={styles.hero}>
         <div className={styles.left}>
-            <h1 className={styles.title}>Hi — I'm Andres Severino 👋</h1>
-            <p className={styles.subtitle}>QA Engineer & Frontend Developer in progress</p>
+            <h1 className={styles.title}>Hi — I'm Andres Severino </h1>
+            <p className={styles.subtitle}>Full Stack Developer </p>
             <p className={styles.lead}>
               I build clean and simple interfaces using Next.js, TypeScript and CSS Modules.
               I focus on quality, accessibility and readable code.
@@ -21,7 +21,9 @@ export default function Home() {
         </div>
 
         <div className={styles.right}>
-            <div className={styles.photo}>Photo</div>
+            <div className={styles.photo}>
+              <img src="https://e7.pngegg.com/pngimages/415/765/png-clipart-user-profile-linkedin-netwerk-money-order-fulfillment-round-face-saving-expert.png" alt="" />
+            </div>
         </div>
       </div>
     </section>

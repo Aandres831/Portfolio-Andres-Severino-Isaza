@@ -1,21 +1,88 @@
-/* File: src/app/layout.module.css */
-/* Estilos principales para el cuerpo de la página, aplicando fondo oscuro, degradados sutiles y tipografía. */
-body {
-  min-height: 100vh;
-  background: 
-    radial-gradient(
-      circle at 30% 20%, 
-      hsl(150, 68%, 66%, 0.05), 
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 70% 80%, 
-      hsl(160, 84%, 39%, 0.04), 
-      transparent 60%
-    ),
-    var(--bg);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  letter-spacing: 0.3px;
+/* ------------------------------------------------ */
+/* Layout Component Styles (Header, Footer, Main) */
+/* ------------------------------------------------ */
+
+/* Body/App Structure Setup */
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the whole viewport height is covered */
 }
 
+.main {
+  flex-grow: 1; /* Important: Pushes the footer down */
+  padding-top: 1rem; /* Small padding below header */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb; /* Light border */
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark, #1f2937); /* Uses variable defined in Hero styles or default */
+  padding: 0.5rem 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  font-weight: 500;
+  color: var(--color-text-light, #4b5563);
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary, #1e40af);
+}
+
+/* Footer Styles */
+.footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f3f4f6; /* Light gray background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #6b7280;
+}
+
+.socials a:hover {
+  color: var(--color-primary, #1e40af);
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+}

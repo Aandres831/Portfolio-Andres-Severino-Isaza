@@ -1,1 +1,32 @@
-/* src/app/about/about.module.css */
+/* ------------------------------------------------ */
+/* About Section Styles */
+/* ------------------------------------------------ */
+
+.wrap {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-dark, #1f2937);
+    margin-bottom: 2rem;
+
+    border-bottom: 3px solid var(--color-primary, #1e40af);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .wrap {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
