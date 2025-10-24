@@ -7,6 +7,7 @@ export default function AboutPage(){
     <section className={styles.wrap}>
       <h2 className={styles.heading}>About me</h2>
       <AboutMe />
+      
     </section>
   );
 }

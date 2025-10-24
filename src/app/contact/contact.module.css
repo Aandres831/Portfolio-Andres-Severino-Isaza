@@ -1,0 +1,88 @@
+.wrap {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-dark, #1f2937);
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid var(--color-primary, #1e40af);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.lead {
+  color: var(--color-text-light, #4b5563);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* 👇 Todo lo que estaba suelto, ahora está dentro de .form */
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--color-text-dark, #1f2937);
+}
+
+.form input,
+.form textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary, #1e40af);
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.2);
+}
+
+.errorInput {
+  border-color: #dc2626;
+}
+
+.errorText {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitBtn {
+  background: var(--color-primary, #1e40af);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #1e3a8a;
+}
+
+.successMsg {
+  color: #16a34a;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.errorMsg {
+  color: #dc2626;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
