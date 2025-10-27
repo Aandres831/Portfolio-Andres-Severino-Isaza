@@ -1,18 +1,24 @@
 "use client";
 import React from "react";
 
-interface CardProps {
-    img: string;
-    description: string;
-    url: string
+interface Product {
+  name: string;
+  price: number;
 }
 
-export const Card: React.FC<CardProps> = ({ img, description, url }) => {
+interface CardProps {
+  img: string;
+  description: string;
+  url: string;
+  product: Product;
+}
+
+export const Card: React.FC<CardProps> = ({ img, description, url, product }) => {
   return (
     <div className="bg-gray-800 text-gray-100 shadow-2xl rounded-xl overflow-hidden flex flex-col border border-gray-700 transition-all duration-300 hover:shadow-blue-500/50 hover:scale-[1.02]">
       <div className="h-48 w-full bg-gray-700">
         <img
-          src={Card.ur || ""}
+          src={url || ""}
           alt={product.name}
           className="h-full w-full object-cover"
         />
