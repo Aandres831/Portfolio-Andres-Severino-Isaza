@@ -1,38 +1,49 @@
 @import "tailwindcss";
+/* ------------------------------------------------ */
+/* CSS Reset and Base Styles (Goes in globals.css) */
+/* ------------------------------------------------ */
 
-:root {
-  --bg: #0D110E;
-  --panel: #1A231C;
-  --text: #F0FDF4;
-  --muted: #A8B3AB;
-  --accent: #6EE7B7;
-  --accent-2: #10B981;
-  --error: #EF4444;
-  --warning: #F59E0B;
-  --radius: 8px;
-}
-
-* {
+/* Universal Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Base HTML and Body Styles */
+html {
+  /* Asumo una fuente moderna como Inter, común en proyectos Next/React */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: "Inter", system-ui, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* Define CSS Variables for Green Theme */
+  --color-primary: #059669; /* Emerald 600 - Green principal */
+  --color-primary-dark: #065F46; /* Emerald 800 - Para estados hover/active */
+  --color-text-dark: #1f2937; /* Gris muy oscuro para texto principal */
+  --color-text-light: #4b5563; /* Gris medio para texto secundario */
+
+  background-color: #ffffff; 
+  color: var(--color-text-dark); 
   min-height: 100vh;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
+/* Utility Class: Container (Used in <main className={styles.main + ' container'}>) */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-a:hover {
-  color: var(--accent-2);
+/* Non-button link default styles */
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -1,1 +1,154 @@
-/* src/app/projects/projects.module.css */
+/* ------------------------------------------------ */
+/* Projects Section Styles */
+/* ------------------------------------------------ */
+
+/* --- Section Container (Reused from About) --- */
+.wrap {
+    /* Establece un ancho máximo y centra la sección, asegurando espacio en los lados */
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+/* --- Section Heading (Reused from About) --- */
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-dark, #1f2937);
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid var(--color-primary, #1e40af);
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .wrap {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+}
+
+/* --- Lead Paragraph --- */
+.lead {
+    font-size: 1.125rem;
+    color: var(--color-text-light, #4b5563);
+    margin-bottom: 3rem;
+}
+
+/* --- Grid Layout --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* --- Project Card (.card) --- */
+.card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Card Title (h3) --- */
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary, #1e40af);
+    margin-bottom: 0.75rem;
+}
+
+/* --- Card Description --- */
+.desc {
+    color: var(--color-text-dark, #1f2937);
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+/* --- Card Tech Tags --- */
+.tech {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-light, #4b5563);
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 0;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* --- Actions/Links Container --- */
+.actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+/* --- Action Links (Repo/Demo) --- */
+.link {
+    font-weight: 600;
+    color: var(--color-primary, #1e40af);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.link:hover {
+    border-bottom-color: var(--color-primary, #1e40af);
+}
+
+/* --- Detail Page --- */
+.detailBox {
+    background: #ffffff;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.backLink {
+    font-weight: 600;
+    color: var(--color-primary, #1e40af);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.backLink:hover {
+    border-bottom-color: var(--color-primary, #1e40af);
+}
+
+/* --- Project Thumbnails --- */
+.thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .thumbnail {
+    transform: scale(1.03);
+}
+
+/* --- Detail Page Image --- */
+.detailImage {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.75rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
