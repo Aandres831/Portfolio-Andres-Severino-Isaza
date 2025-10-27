@@ -17,7 +17,7 @@ export const projects: Project[] = [
         tech: "HTML, TypeScript, CSS, Mongoose",
         repo: "https://github.com/Aandres831/Portfolio-Andres-Severino-Isaza",
         demo: "https://jobfindersdemo.netlify.app/",
-        image: "/JobFinder.png"
+        image: "/jobFinder.png"
     },
     {
         slug: "Library-Next",
