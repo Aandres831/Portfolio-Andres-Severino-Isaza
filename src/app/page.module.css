@@ -7,8 +7,8 @@
 /* 1. Global Setup (Colors, Variables) */
 /* ---------------------------------- */
 :root {
-    --color-primary: #10B981;    /* Emerald 500 - Main Green */
-    --color-primary-dark: #059669; /* Emerald 600 - Hover/Active Green */
+    --color-primary: #10B981;    
+    --color-primary-dark: #059669; 
     --color-text-dark: #1f2937;
     /* Gray-800 */
     --color-text-light: #4b5563;
@@ -62,7 +62,6 @@
 }
 
 .subtitle {
-    /* Uses var(--color-primary) for the main branding color */
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -118,7 +117,6 @@
     transform: translateY(-1px);
 }
 
-/* Ghost Button (Outline - Green) */
 .ghost {
     background-color: transparent;
     color: var(--color-primary); /* Text is now primary green */

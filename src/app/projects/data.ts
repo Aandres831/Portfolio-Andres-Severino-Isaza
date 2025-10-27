@@ -13,28 +13,28 @@ export const projects: Project[] = [
     {
         slug: "snackapp-ui",
         title: "JobFinder",
-        desc: "Demo UI for a food app; focus on layout & components.",
-        tech: "HTML, JavaScript, CSS, NodeJS",
+        desc: "Here you can improve your salary or employe the best talent.",
+        tech: "HTML, TypeScript, CSS, Mongoose",
         repo: "https://github.com/Aandres831/Portfolio-Andres-Severino-Isaza",
         demo: "https://jobfindersdemo.netlify.app/",
-        image: ""
+        image: "/JobFinder.png"
     },
     {
-        slug: "form-playground",
-        title: "Form Playground",
-        desc: "Accessible contact form with validation samples.",
-        tech: "React, TypeScript",
-        repo: "https://github.com/Aandres831/Portfolio-Andres-Severino-Isaza",
-        demo: "https://jobfindersdemo.netlify.app/",
-        image: "/images/formplay.jpg"
+        slug: "Library-Next",
+        title: "Library-Next",
+        desc: "Accessible library form with validation samples.",
+        tech: "React, TypeScript, NextJS, Mongoose",
+        repo: "https://github.com/Aandres831/library-nextjs.git",
+        demo: "https://github.com/Aandres831/library-nextjs.git",
+        image: "/libraryNext.jpg"
     },
     {
-        slug: "data-normalizer",
-        title: "Data Normalizer",
+        slug: "SPA Example",
+        title: "SPA Example",
         desc: "Utilities for cleaning and normalizing datasets.",
-        tech: "TypeScript",
-        repo: "https://github.com/Aandres831/Portfolio-Andres-Severino-Isaza",
-        demo: "https://jobfindersdemo.netlify.app/",
-        image: "/images/datanorm.jpg"
+        tech: "JavaScript, HTML, CSS",
+        repo: "https://github.com/Aandres831/SPA.git",
+        demo: "https://github.com/Aandres831/SPA.git",
+        image: "/SPA.png"
     }
 ]

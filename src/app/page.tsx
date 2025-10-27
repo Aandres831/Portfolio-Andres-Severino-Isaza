@@ -54,7 +54,7 @@ export default function Home() {
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
           >
             <img
-              src="https://e7.pngegg.com/pngimages/415/765/png-clipart-user-profile-linkedin-netwerk-money-order-fulfillment-round-face-saving-expert.png"
+              src="/myImage2.png"
               alt="Andrés Severino"
             />
           </motion.div>
